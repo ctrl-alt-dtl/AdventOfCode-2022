@@ -1,11 +1,10 @@
 from itertools import groupby
 
 inputFile = open("input.txt", 'r') # not full path
-
 data = inputFile.read()
+inputFile.close()
 
 dataInList = data.split('\n')
-inputFile.close()
 
 result = []
 for i in dataInList:
