@@ -1,6 +1,6 @@
 # Problem
 
-## --- Part 1 ---
+## --- Part One ---
 
 This list represents the Calories of the food carried by five Elves:
 
