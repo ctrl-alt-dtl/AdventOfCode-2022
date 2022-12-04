@@ -1,6 +1,6 @@
 from itertools import groupby
 
-inputFile = open("input.txt", 'r') 
+inputFile = open("input.txt", 'r') #not full path
 
 data = inputFile.read()
 
@@ -18,5 +18,7 @@ for i in dataInList:
 newResult = [list(sub) for element, sub in groupby(result, key=bool) if element]
 
 sumList = [sum(l) for l in newResult]
-sumList.sort(reverse=True)
-print(sumList)
+
+print("Part 1: " + str(sum(sorted(sumList, reverse=True)[:1])))
+
+print("Part 2: " + str(sum(sorted(sumList, reverse=True)[:3])))
