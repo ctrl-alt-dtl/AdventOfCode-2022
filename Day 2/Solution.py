@@ -51,7 +51,7 @@ while x < len(result):
 print("Part 1: " + str(finalScore))
 
 
-# Part 2 (needs work)
+# Part 2
 # A - Rock = 1, B - Paper = 2, C - Scissors = 3
 # X - Lose = 0, Y - Draw = 3, Z - Win = 6
 
@@ -67,11 +67,11 @@ while i < len(result):
         finalScore2 += 7
 
     # Lose + 0
-    if result[i][0] == 'A' and result[i][1] == 'X': # R > P = 2
-        finalScore2 += 2
-    if result[i][0] == 'B' and result[i][1] == 'X': # P > R = 3
+    if result[i][0] == 'A' and result[i][1] == 'X': # R > S = 3
+        finalScore2 += 3
+    if result[i][0] == 'B' and result[i][1] == 'X': # P > R = 1
         finalScore2 += 1
-    if result[i][0] == 'C' and result[i][1] == 'X': # S > P = 1
+    if result[i][0] == 'C' and result[i][1] == 'X': # S > P = 2
         finalScore2 += 2
 
     # Draw + 3
