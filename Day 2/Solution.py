@@ -50,5 +50,39 @@ while x < len(result):
 # Part 1 Score
 print("Part 1: " + str(finalScore))
 
+
+# Part 2 (needs work)
+# A - Rock = 1, B - Paper = 2, C - Scissors = 3
+# X - Lose = 0, Y - Draw = 3, Z - Win = 6
+
+i = 0
+finalScore2 = 0
+while i < len(result):
+    # Win + 6
+    if result[i][0] == 'A' and result[i][1] == 'Z': # R < P + W = 8
+        finalScore2 += 8
+    if result[i][0] == 'B' and result[i][1] == 'Z': # P < S + W = 9
+        finalScore2 += 9
+    if result[i][0] == 'C' and result[i][1] == 'Z': # S < R + W = 7
+        finalScore2 += 7
+
+    # Lose + 0
+    if result[i][0] == 'A' and result[i][1] == 'X': # R > P = 2
+        finalScore2 += 2
+    if result[i][0] == 'B' and result[i][1] == 'X': # P > R = 3
+        finalScore2 += 1
+    if result[i][0] == 'C' and result[i][1] == 'X': # S > P = 1
+        finalScore2 += 2
+
+    # Draw + 3
+    if result[i][0] == 'A' and result[i][1] == 'Y': # R + R + D = 4
+        finalScore2 += 4
+    if result[i][0] == 'B' and result[i][1] == 'Y': # P + P + D = 5
+        finalScore2 += 5
+    if result[i][0] == 'C' and result[i][1] == 'Y': # S + S + D = 6
+        finalScore2 += 6
+
+    i += 1
+
 # Part 2 Score
-print("Part 2: " + str(finalScore))
+print("Part 2: " + str(finalScore2))
