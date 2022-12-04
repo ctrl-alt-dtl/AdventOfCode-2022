@@ -21,5 +21,5 @@ sumList = [sum(l) for l in newResult]
 
 # Part 1 Top Amount
 print("Part 1: " + str(sum(sorted(sumList, reverse=True)[:1])))
-# Part 2 Top Three
+# Part 2 Top Three Added
 print("Part 2: " + str(sum(sorted(sumList, reverse=True)[:3])))
