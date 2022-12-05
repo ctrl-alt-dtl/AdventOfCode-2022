@@ -9,16 +9,13 @@ with open(inputFile, 'r') as fp:
         except ValueError:
             pass
 
-# print(result)
-count = 0
-
-
 def priority_count(item):
     if item.islower():
         return ord(item) - ord('a') + 1
     else:
         return ord(item) - ord('A') + 27
 
+count = 0
 
 for line in result:
     ruck = list(line)
@@ -41,4 +38,3 @@ for sublist in resultGroups:
             count2 += priority_count(item)
             break
 print("Part 2: " + str(count2))
-
