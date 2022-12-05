@@ -29,4 +29,4 @@ for line in result:
         if i in ruckCompartment[1]:
             count += priority_count(i)
             break
-print("Count: " + str(count))
+print("Part 1 Count: " + str(count))
