@@ -15,8 +15,8 @@ def priority_count(item):
     else:
         return ord(item) - ord('A') + 27
 
+# Part One
 count = 0
-
 for line in result:
     ruck = list(line)
     ruckSplit = int(len(ruck) / 2)
