@@ -29,4 +29,16 @@ for line in result:
         if i in ruckCompartment[1]:
             count += priority_count(i)
             break
-print("Part 1 Count: " + str(count))
+print("Part 1: " + str(count))
+
+# Part Two
+count2 = 0
+resultGroups = [result[i:i+3] for i in range(0, len(result), 3)]
+
+for sublist in resultGroups:
+    for item in sublist[0]:
+        if item in sublist[1] and item in sublist[2]:
+            count2 += priority_count(item)
+            break
+print("Part 2: " + str(count2))
+
