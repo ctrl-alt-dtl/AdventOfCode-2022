@@ -1,11 +1,10 @@
 inputFile = open("input.txt", 'r')  # not full path
-data = inputFile.read()
+data = inputFile.read().split()
 inputFile.close()
-dataInList = data.split()
 
 count = 0
 
-for x in dataInList:
+for x in data:
     pair = x.split(',')
     section1 = list(map(int, pair[0].split('-')))
     section2 = list(map(int, pair[1].split('-')))
