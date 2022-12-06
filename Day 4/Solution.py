@@ -1,8 +1,8 @@
 inputFile = open("input.txt", 'r')  # not full path
 data = inputFile.read()
 inputFile.close()
-
 dataInList = data.split()
+
 count = 0
 
 for x in dataInList:
