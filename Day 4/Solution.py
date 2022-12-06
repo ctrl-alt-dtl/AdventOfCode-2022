@@ -1,28 +1,17 @@
-inputFile = "input2.txt"  # Not full path
+inputFile = open("input.txt", 'r')  # not full path
+data = inputFile.read()
+inputFile.close()
 
-with open(inputFile, 'r') as fp:
-    result = fp.read().splitlines()
-
-# print(result)
-
+dataInList = data.split()
 count = 0
 
-for x in range(len(result)-1):
-    a = result[x].split(',')
-    # print(a[0], a[1])
-
+for x in dataInList:
+    a = x.split(',')
     section1 = a[0].split('-')
     section2 = a[1].split('-')
 
-    if section1[0] >= section2[0] and section1[1] <= section2[1] or \
-            section2[0] >= section1[0] and section2[1] <= section1[1]:
-        print(section1[0], section1[1])
-        print(section2[0], section2[1])
-        print("")
+    if (int(section1[0]) <= int(section2[0]) and int(section1[1]) >= int(section2[1])) or \
+            (int(section2[0]) <= int(section1[0]) and int(section2[1]) >= int(section1[1])):
         count += 1
 
-print(count)
-
-
-
-
+print("Part 1: " + str(count))
