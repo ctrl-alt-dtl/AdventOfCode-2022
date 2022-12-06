@@ -7,11 +7,11 @@ count = 0
 
 for x in dataInList:
     a = x.split(',')
-    section1 = a[0].split('-')
-    section2 = a[1].split('-')
+    section1 = list(map(int, a[0].split('-')))
+    section2 = list(map(int, a[1].split('-')))
 
-    if (int(section1[0]) <= int(section2[0]) and int(section1[1]) >= int(section2[1])) or \
-            (int(section2[0]) <= int(section1[0]) and int(section2[1]) >= int(section1[1])):
+    if (section1[0] <= section2[0] and section1[1] >= section2[1]) or \
+            (section2[0] <= section1[0] and section2[1] >= section1[1]):
         count += 1
 
 print("Part 1: " + str(count))
