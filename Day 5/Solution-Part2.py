@@ -10,15 +10,16 @@ cargo_crates = [
     ['R', 'J', 'Q', 'G', 'C'],
     ['L', 'D', 'T', 'R', 'H', 'P', 'F', 'S']
 ]
-
-# for i in range(len(cargo_crates)):
-#    for j in range(len(cargo_crates[i])):
-#        print(cargo_crates[i][j], end=" ")
-#    print()
+test_crates = [
+    ['Z', 'N'],
+    ['M', 'C', 'D'],
+    ['P']
+]
 
 inputFile = "input.txt"  # Not full path
 result = []
 
+# Part 1
 moves = []  # final list for moves
 with open(inputFile, 'r') as fp:
     for i in fp.readlines():
@@ -31,12 +32,10 @@ with open(inputFile, 'r') as fp:
                 pass
         moves.append(all_moves)
 
-# Part 1
+# Part 2 - This hurt my head.....
 for num, start, finish in moves:
-    for i in range(num):
-        x = cargo_crates[start - 1].pop()
-        cargo_crates[finish - 1].append(x)
+    multi_stack = cargo_crates[start - 1][-num:]
+    cargo_crates[start - 1] = cargo_crates[start - 1][:-num]
+    cargo_crates[finish - 1] += multi_stack
 
-print("Part 1: " + "".join([a[-1] for a in cargo_crates]))
-
-# Part 2
+print("Part 2: " + "".join([a[-1] for a in cargo_crates]))
