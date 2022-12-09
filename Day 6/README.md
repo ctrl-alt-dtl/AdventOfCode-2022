@@ -1,4 +1,6 @@
---- Day 6: Tuning Trouble ---
+# --- Day 6: Tuning Trouble ---
+
+## --- Part One ---
 
 The preparations are finally complete; you and the Elves leave camp on foot and begin to make your way toward the star fruit grove.
 
@@ -30,3 +32,5 @@ Here are a few more examples:
     zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw: first marker after character 11
 
 How many characters need to be processed before the first start-of-packet marker is detected?
+
+## --- Part Two ---
