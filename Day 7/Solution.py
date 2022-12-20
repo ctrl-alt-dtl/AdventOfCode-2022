@@ -1,4 +1,4 @@
-inputFile = open("input2.txt", 'r')
+inputFile = open("input.txt", 'r')
 rawData = inputFile.read().split("\n")
 inputFile.close()
 
@@ -19,19 +19,21 @@ index = 1
 nodeDictonary = {}
 current = root
 
-# Walk the directory
+# Map the directory
 for line in data:
     if line[0] == "$":
         if line[1] == "cd":
             if line[2] == "..":
-                current = root
+                current = current.parent
             else:
                 directoryName = line[2]
                 if directoryName == "/":
                     current = root
                 else:
                     current = current.content[directoryName]
-    else: # Breaking down directory and fileName & fileSizes
+
+    # Breaking down directory and fileName & fileSizes
+    else:
         if line[0] =="dir":
             directoryName = line[1]
             print("Dir: " + directoryName)
@@ -39,12 +41,13 @@ for line in data:
             current.content[directoryName] = nodeDictonary[index]
             index += 1
         else:
-            fileSize = int(line[0])
-            fileName = line[1]
-            print(f"\tName: {fileName : <8} Size: {str(fileSize) : >}")
-            nodeDictonary[index] = Node(index, parent=current, size=fileSize)
-            current.content[fileName] = nodeDictonary[index]
-            index += 1
+            if line[0] != '':
+                fileSize = int(line[0])
+                fileName = line[1]
+                print(f"\tName: {fileName : <10} Size: {str(fileSize) : >}")
+                nodeDictonary[index] = Node(index, parent=current, size=fileSize)
+                current.content[fileName] = nodeDictonary[index]
+                index += 1
 
 totalSizeOfDirs = 0
 
