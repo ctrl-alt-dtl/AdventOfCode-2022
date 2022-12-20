@@ -5,7 +5,7 @@ inputFile.close()
 rep = []
 for x in data:
     rep.append(x.split(" "))
-# print(list(rep))
+
 class Node:
     def __init__(self, index, parent=None, size=0):
         self.index = index
