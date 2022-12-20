@@ -34,17 +34,17 @@ for line in data:
     else: # Breaking down directory and fileName & fileSizes
         if line[0] =="dir":
             directoryName = line[1]
-            print("Directory: " + directoryName)
+            print("Dir: " + directoryName)
             nodeDictonary[index] = Node(index, parent=current)
             current.content[directoryName] = nodeDictonary[index]
             index += 1
         else:
             fileSize = int(line[0])
             fileName = line[1]
-            print(f"Size: {str(fileSize)} Name: {fileName}")
+            print(f"\tName: {fileName : <8} Size: {str(fileSize) : >}")
             nodeDictonary[index] = Node(index, parent=current, size=fileSize)
             current.content[fileName] = nodeDictonary[index]
             index += 1
 
-
+totalSizeOfDirs = 0
 
