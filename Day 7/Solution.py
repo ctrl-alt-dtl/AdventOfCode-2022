@@ -1,4 +1,4 @@
-inputFile = open("input.txt", 'r')
+inputFile = open("input2.txt", 'r')
 rawData = inputFile.read().split("\n")
 inputFile.close()
 
@@ -34,7 +34,7 @@ for line in data:
 
     # Breaking down directory and fileName & fileSizes
     else:
-        if line[0] =="dir":
+        if line[0] == "dir":
             directoryName = line[1]
             print("Dir: " + directoryName)
             nodeDictonary[index] = Node(index, parent=current)
@@ -49,5 +49,10 @@ for line in data:
                 current.content[fileName] = nodeDictonary[index]
                 index += 1
 
+
+# Part 1
 totalSizeOfDirs = 0
 
+# TODO: Walk and sum
+
+print("Part 1: " + str(totalSizeOfDirs))
