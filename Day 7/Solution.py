@@ -1,3 +1,5 @@
+from pathlib import Path
+
 inputFile = open("input2.txt", 'r')
 rawData = inputFile.read().split("\n")
 inputFile.close()
@@ -6,7 +8,7 @@ data = []
 for x in rawData:
     data.append(x.split(" "))
 
-class Node:
+class DirectoryPath:
     def __init__(self, index, parent=None, size=0):
         self.index = index
         self.parent = parent
@@ -14,7 +16,7 @@ class Node:
         self.size = size
         self.lessSize = size
 
-root = Node(0)
+root = DirectoryPath(0)
 index = 1
 nodeDictonary = {}
 current = root
@@ -37,7 +39,7 @@ for line in data:
         if line[0] == "dir":
             directoryName = line[1]
             print("Dir: " + directoryName)
-            nodeDictonary[index] = Node(index, parent=current)
+            nodeDictonary[index] = DirectoryPath(index, parent=current)
             current.content[directoryName] = nodeDictonary[index]
             index += 1
         else:
@@ -45,7 +47,7 @@ for line in data:
                 fileSize = int(line[0])
                 fileName = line[1]
                 print(f"\tName: {fileName : <10} Size: {str(fileSize) : >}")
-                nodeDictonary[index] = Node(index, parent=current, size=fileSize)
+                nodeDictonary[index] = DirectoryPath(index, parent=current, size=fileSize)
                 current.content[fileName] = nodeDictonary[index]
                 index += 1
 
