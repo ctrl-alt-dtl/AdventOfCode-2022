@@ -1,10 +1,10 @@
 inputFile = open("input2.txt", 'r')
-data = inputFile.read().split("\n")
+rawData = inputFile.read().split("\n")
 inputFile.close()
 
-rep = []
-for x in data:
-    rep.append(x.split(" "))
+data = []
+for x in rawData:
+    data.append(x.split(" "))
 
 class Node:
     def __init__(self, index, parent=None, size=0):
@@ -20,7 +20,7 @@ nodeDictonary = {}
 current = root
 
 # Walk the directory
-for line in rep:
+for line in data:
     if line[0] == "$":
         if line[1] == "cd":
             if line[2] == "..":
