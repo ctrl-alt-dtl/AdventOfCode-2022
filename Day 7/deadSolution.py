@@ -1,4 +1,4 @@
-inputFile = open("input2.txt", 'r')
+inputFile = open("input.txt", 'r')
 rawData = inputFile.read().split("\n")
 inputFile.close()
 
@@ -36,7 +36,7 @@ for line in data:
     else:
         if line[0] == "dir":
             directoryName = line[1]
-            print("Dir: " + directoryName)
+            # print("Dir: " + directoryName)
             nodeDictonary[index] = DirectoryPath(index, parent=current)
             current.content[directoryName] = nodeDictonary[index]
             index += 1
@@ -44,7 +44,7 @@ for line in data:
             if line[0] != '':
                 fileSize = int(line[0])
                 fileName = line[1]
-                print(f"\tName: {fileName : <10} Size: {str(fileSize) : >}")
+                # print(f"\tName: {fileName : <10} Size: {str(fileSize) : >}")
                 nodeDictonary[index] = DirectoryPath(index, parent=current, size=fileSize)
                 current.content[fileName] = nodeDictonary[index]
                 index += 1
@@ -52,7 +52,20 @@ for line in data:
 
 # Part 1
 totalSizeOfDirs = 0
-
-# TODO: Walk and sum
+to_visit = [root]
+visited = set()
+while len(to_visit) > 0:
+    node = to_visit[-1]
+    for sub in node.content.values():
+        if sub.index not in visited:
+            to_visit.append(sub)
+            break
+    else:
+        node = to_visit.pop()
+        visited.add(node.index)
+        if node.parent is not None:
+            node.parent.lessSize += node.lessSize
+        if (node.lessSize <= 100000) and (len(node.content) > 0):
+            totalSizeOfDirs += node.lessSize
 
 print("Part 1: " + str(totalSizeOfDirs))
