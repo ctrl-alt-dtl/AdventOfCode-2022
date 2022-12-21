@@ -1,3 +1,5 @@
+# a complex way of doing this
+
 inputFile = open("input.txt", 'r')
 rawData = inputFile.read().split("\n")
 inputFile.close()
@@ -48,7 +50,6 @@ for line in data:
                 nodeDictonary[index] = DirectoryPath(index, parent=current, size=fileSize)
                 current.content[fileName] = nodeDictonary[index]
                 index += 1
-
 
 # Part 1
 totalSizeOfDirs = 0
