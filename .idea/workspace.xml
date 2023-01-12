@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fb7632ea-8a8e-40bd-a951-61626afd37e5" name="Changes" comment="working on day 7" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="RMarkdown.notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="kz12p8iv" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IRyVwo5a8SGf9okNDKo21PnYaA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Code/Personal Projects/Python/AdventOfCode-2022&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Code\Personal Projects\Python\AdventOfCode-2022\Day 4" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb7632ea-8a8e-40bd-a951-61626afd37e5" name="Changes" comment="" />
+      <created>1670158718372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670158718372</updated>
+    </task>
+    <task id="LOCAL-00001" summary="cleaning up the code">
+      <created>1670161190648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670161190648</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cleaning up the code">
+      <created>1670161272556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670161272556</updated>
+    </task>
+    <task id="LOCAL-00003" summary="working on day 2">
+      <created>1670161645382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670161645382</updated>
+    </task>
+    <task id="LOCAL-00004" summary="working on day 2">
+      <created>1670165896444</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670165896444</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".">
+      <created>1670166006820</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670166006820</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".">
+      <created>1670166129575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670166129575</updated>
+    </task>
+    <task id="LOCAL-00007" summary="WIP">
+      <created>1670167650963</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670167650963</updated>
+    </task>
+    <task id="LOCAL-00008" summary="I think I have it now">
+      <created>1670167919049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670167919049</updated>
+    </task>
+    <task id="LOCAL-00009" summary="cleaning it up">
+      <created>1670174451073</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670174451073</updated>
+    </task>
+    <task id="LOCAL-00010" summary="edits and adding day 3">
+      <created>1670174912826</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670174912826</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <created>1670174980609</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670174980609</updated>
+    </task>
+    <task id="LOCAL-00012" summary=".">
+      <created>1670175197696</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670175197696</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Day 3 part 1">
+      <created>1670204940667</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670204940667</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Day 3 part 1">
+      <created>1670205034589</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670205034589</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Day 3 Complete">
+      <created>1670207305139</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670207305139</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Day 3 Complete">
+      <created>1670207425829</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670207425829</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Day 3 Complete">
+      <created>1670207544525</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670207544525</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Day 3 Complete">
+      <created>1670207570348</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670207570348</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Starting Day 4">
+      <created>1670286738565</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670286738565</updated>
+    </task>
+    <task id="LOCAL-00020" summary="day 4 - wip">
+      <created>1670289242993</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670289242993</updated>
+    </task>
+    <task id="LOCAL-00021" summary="day 4 - wip">
+      <created>1670291252091</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670291252091</updated>
+    </task>
+    <task id="LOCAL-00022" summary="day 4 - wip">
+      <created>1670293291182</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670293291182</updated>
+    </task>
+    <task id="LOCAL-00023" summary="day 4 - wip">
+      <created>1670294935721</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670294935721</updated>
+    </task>
+    <task id="LOCAL-00024" summary="day 4 part 1 done">
+      <created>1670295877807</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1670295877807</updated>
+    </task>
+    <task id="LOCAL-00025" summary="day 4 part 1 done">
+      <created>1670295932026</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670295932026</updated>
+    </task>
+    <task id="LOCAL-00026" summary="day 4 part 1 done">
+      <created>1670295950284</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670295950284</updated>
+    </task>
+    <task id="LOCAL-00027" summary="day 4 part 1 done">
+      <created>1670296126454</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670296126454</updated>
+    </task>
+    <task id="LOCAL-00028" summary="day 5 part 1">
+      <created>1670548969828</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670548969828</updated>
+    </task>
+    <task id="LOCAL-00029" summary="day 5 complete">
+      <created>1670550610987</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1670550610987</updated>
+    </task>
+    <task id="LOCAL-00030" summary="starting day 6">
+      <created>1670550877859</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1670550877859</updated>
+    </task>
+    <task id="LOCAL-00031" summary="cleaning up day 5">
+      <created>1670551844170</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1670551844170</updated>
+    </task>
+    <task id="LOCAL-00032" summary="day 6">
+      <created>1670552139536</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1670552139536</updated>
+    </task>
+    <task id="LOCAL-00033" summary="day 6 complete">
+      <created>1670675427872</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670675427872</updated>
+    </task>
+    <task id="LOCAL-00034" summary="adding Day 7">
+      <created>1670675513224</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1670675513224</updated>
+    </task>
+    <task id="LOCAL-00035" summary="adding a main readme">
+      <created>1670675858370</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1670675858370</updated>
+    </task>
+    <task id="LOCAL-00036" summary="adding Day 7">
+      <created>1670676259526</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1670676259526</updated>
+    </task>
+    <task id="LOCAL-00037" summary="working on Day 7">
+      <created>1671496638067</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1671496638067</updated>
+    </task>
+    <task id="LOCAL-00038" summary="working on Day 7">
+      <created>1671496682054</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1671496682054</updated>
+    </task>
+    <task id="LOCAL-00039" summary="working on Day 7">
+      <created>1671496783649</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1671496783649</updated>
+    </task>
+    <task id="LOCAL-00040" summary="working on Day 7">
+      <created>1671497378803</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1671497378803</updated>
+    </task>
+    <task id="LOCAL-00041" summary="working on Day 7">
+      <created>1671543349881</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1671543349881</updated>
+    </task>
+    <task id="LOCAL-00042" summary="working on Day 7">
+      <created>1671543942777</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1671543942777</updated>
+    </task>
+    <task id="LOCAL-00043" summary="working on Day 7">
+      <created>1671552073084</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1671552073084</updated>
+    </task>
+    <task id="LOCAL-00044" summary="working on Day 7">
+      <created>1671552796269</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1671552796269</updated>
+    </task>
+    <task id="LOCAL-00045" summary="working on Day 7">
+      <created>1671594096495</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1671594096495</updated>
+    </task>
+    <task id="LOCAL-00046" summary="working on Day 7">
+      <created>1671594552892</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1671594552892</updated>
+    </task>
+    <task id="LOCAL-00047" summary="working on Day 7">
+      <created>1671618531036</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1671618531036</updated>
+    </task>
+    <task id="LOCAL-00048" summary="working on day 7">
+      <created>1671618685598</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1671618685598</updated>
+    </task>
+    <task id="LOCAL-00049" summary="working on day 7">
+      <created>1671623619328</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1671623619328</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cleaning up the code" />
+    <MESSAGE value="working on day 2" />
+    <MESSAGE value="WIP" />
+    <MESSAGE value="I think I have it now" />
+    <MESSAGE value="cleaning it up" />
+    <MESSAGE value="edits and adding day 3" />
+    <MESSAGE value="." />
+    <MESSAGE value="Day 3 part 1" />
+    <MESSAGE value="Day 3 Complete" />
+    <MESSAGE value="Starting Day 4" />
+    <MESSAGE value="day 4 - wip" />
+    <MESSAGE value="day 4 part 1 done" />
+    <MESSAGE value="day 5 part 1" />
+    <MESSAGE value="day 5 complete" />
+    <MESSAGE value="starting day 6" />
+    <MESSAGE value="cleaning up day 5" />
+    <MESSAGE value="day 6" />
+    <MESSAGE value="day 6 complete" />
+    <MESSAGE value="adding a main readme" />
+    <MESSAGE value="adding Day 7" />
+    <MESSAGE value="working on Day 7" />
+    <MESSAGE value="working on day 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on day 7" />
+  </component>
+</project>
